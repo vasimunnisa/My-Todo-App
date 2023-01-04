@@ -59,9 +59,9 @@ app.delete("/todos/:id", async function (request, response) {
       }
     })
     if(deleteCount>=1){
-      response.send({success:true})
+      response.send(true)
     }else{
-      response.send({success:false})
+      response.send(false)
     }
   }catch(error){
     console.log(error);
